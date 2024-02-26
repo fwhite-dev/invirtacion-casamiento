@@ -1,0 +1,203 @@
+*,
+*::after,
+|*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-white: #fff;
+  --clr-gris: #f7f2f2;
+  --clr-azul: #98d0ff;
+  --clr-rosa: #ffc6d7;
+  --clr-amarillo: #ffe4a8;
+  --clr-verde: #708d81;
+  --clr-verde-agua: #6ed2b7;
+  --clr-azul-oscuro: #001427;
+  --ff-title: "Poppins", sans-serif;
+  --ff-body: "Poppins", sans-serif;
+  --fw-regular: 400;
+}
+html {
+  font-family: system-ui, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+div {
+  border-radius: 32px;
+}
+/* === removing default button style ===*/
+
+.contenerdor-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, minmax(80px, 160px));
+  grid-template-rows: repeat(6, minmax(80px, 160px));
+  gap: 20px;
+  background-color: var(--clr-gris);
+  padding: 1rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+@media (width > 425px) {
+  .foto-0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .relog {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .menu {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+  }
+  .regalos {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+  .ubicacion-salon {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+  }
+  .form-alergias {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+  }
+  .foto-1 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 7;
+  }
+
+  .foto-2 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 7;
+  }
+  .dress-code {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  }
+}
+.relog {
+  background-color: var(--clr-white);
+  color: var(--clr-rosa);
+}
+
+.menu {
+  outline: 2px solid var(--clr-amarillo);
+}
+.regalos {
+  background-color: var(--clr-verde-agua);
+  color: var(--clr-rosa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .circulo-fondo-regalos {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--clr-rosa);
+  }
+  .icono-regalo {
+    z-index: 1;
+  }
+}
+
+.mapa {
+  display: block;
+  width: 340px;
+  height: 160px;
+}
+iframe {
+  outline: var(--clr-white) solid 2px;
+}
+
+.ubicacion-iglesia {
+  background-color: #212121;
+}
+.dress-code {
+  position: relative;
+  background-color: var(--clr-verde-agua);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    z-index: 1;
+  }
+
+  div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--clr-rosa);
+  }
+}
+
+@media (width <= 425px) {
+  .contenerdor-grid {
+    grid-template-columns: 160px 160px;
+    grid-template-rows: repeat(8, 160px);
+  }
+  .foto-0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .ubicacion-salon {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .regalos {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+  }
+  .ubicacion-iglesia {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .menu {
+    grid-column: 2 / 3;
+    grid-row: 5 / 7;
+  }
+  .trafic {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .relog {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+  .form-alergias {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .dress-code {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+  }
+  .foto-1 {
+    grid-column: 1 / 3;
+    grid-row: 9 / 11;
+  }
+  .foto-2 {
+    grid-column: 1 / 3;
+    grid-row: 11 / 13;
+  }
+}

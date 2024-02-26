@@ -1,0 +1,66 @@
+.contenedor {
+  --clr-bisque: #ffe4c4;
+  --clr-white: #fff;
+  --clr-gris: #f7f2f2;
+  --clr-azul: #98d0ff;
+  --clr-rosa: #ffc6d7;
+  --clr-amarillo: #ffe4a8;
+  --clr-verde: #708d81;
+  --clr-verde-agua: #6ed2b7;
+  --clr-azul-oscuro: #001427;
+  position: relative;
+  background-color: #6096ba;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+}
+.btn {
+  display: block;
+  top: calc(100% - 54px);
+  left: 16px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #fff;
+
+  position: relative;
+}
+
+.contenedor:hover .btn {
+  width: 100px;
+  border-radius: 32px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
+    rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
+
+  transition-duration: 0.3s;
+}
+
+.contenedor:hover .icono {
+  position: absolute;
+  left: 70%;
+  transition-duration: 0.3s;
+}
+
+/* text */
+.text {
+  font-size: 12px;
+  width: 0;
+  opacity: 0;
+  color: #212121;
+  transition-duration: 0.3s;
+}
+
+.contenedor:hover .text {
+  position: absolute;
+  right: 15%;
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.4s;
+}
