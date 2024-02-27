@@ -77,9 +77,9 @@ function App() {
           <div className="circulo"></div>
         </div>
 
-        <Card className="foto-0" foto="../../src/assets/img/foto3.jpg" />
-        <Card className="foto-1" foto="../../src/assets/img/foto2.jpg" />
-        <Card className="foto-2" foto="../../src/assets/img/foto1.jpg" />
+        <Card className="foto-0" foto="../public/img/foto3.jpg" />
+        <Card className="foto-1" foto="../public/img/foto3.jpg" />
+        <Card className="foto-2" foto="../public/img/foto3.jpg" />
       </div >
     </div>
   );

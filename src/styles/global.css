@@ -34,12 +34,12 @@ div {
 
 .contenerdor-grid {
   display: grid;
+  background-color: var(--clr-gris);
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, minmax(80px, 160px));
   grid-template-rows: repeat(6, minmax(80px, 160px));
   gap: 20px;
-  background-color: var(--clr-gris);
   padding: 1rem;
 }
 img {
@@ -125,9 +125,6 @@ iframe {
   outline: var(--clr-white) solid 2px;
 }
 
-.ubicacion-iglesia {
-  background-color: #212121;
-}
 .dress-code {
   position: relative;
   background-color: var(--clr-verde-agua);
