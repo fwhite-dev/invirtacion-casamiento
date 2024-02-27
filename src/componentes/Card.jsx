@@ -28,7 +28,7 @@ export const Card = ({ foto, modal, href, nombreBoton, className, iframe, src })
           <Boton nombreBoton={nombreBoton}></Boton>
         ) : foto ? (
 
-          <img src={`../assets/img/${foto}.jpg`} style={{ width: "100%" }} alt="foto" />
+          <img src={foto} style={{ width: "100%" }} alt="foto" />
 
         ) : (
           <div className="text">{nombreBoton}</div>

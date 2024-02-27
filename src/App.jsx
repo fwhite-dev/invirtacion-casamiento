@@ -6,6 +6,7 @@ import "animate.css";
 function App() {
 
 
+
   return (
     <div className="contenedor">
       <div className="contenerdor-grid">
@@ -76,9 +77,9 @@ function App() {
           <div className="circulo"></div>
         </div>
 
-        <Card className="foto-0" foto="foto1" />
-        <Card className="foto-1" foto="img22" />
-        <Card className="foto-2" foto="" />
+        <Card className="foto-0" foto="../../src/assets/img/foto3.jpg" />
+        <Card className="foto-1" foto="../../src/assets/img/foto2.jpg" />
+        <Card className="foto-2" foto="../../src/assets/img/foto1.jpg" />
       </div >
     </div>
   );
