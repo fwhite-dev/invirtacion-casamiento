@@ -48,7 +48,7 @@ img {
   object-fit: cover;
   border-radius: 32px;
 }
-@media (width > 425px) {
+@media (width >= 768px) {
   .foto-0 {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
@@ -151,7 +151,7 @@ iframe {
   }
 }
 
-@media (width <= 425px) {
+@media (width < 768px) {
   .contenerdor-grid {
     grid-template-columns: 160px 160px;
     grid-template-rows: repeat(8, 160px);
