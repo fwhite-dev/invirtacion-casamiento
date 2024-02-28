@@ -27,14 +27,12 @@ body {
 a {
   text-decoration: none;
 }
-div {
-  border-radius: 32px;
-}
+
 /* === removing default button style ===*/
 
 .contenerdor-grid {
   display: grid;
-  background-color: var(--clr-gris);
+  background-color: var(--clr-azul-oscuro);
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, minmax(80px, 160px));
@@ -47,7 +45,9 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 32px;
+  outline: #ffe4a8 solid 2px;
 }
+
 @media (width >= 768px) {
   .foto-0 {
     grid-column: 1 / 3;
@@ -93,10 +93,13 @@ img {
 }
 
 .menu {
+  border-radius: 32px;
   outline: 2px solid var(--clr-amarillo);
 }
 .regalos {
   background-color: var(--clr-verde-agua);
+  border-radius: 32px;
+  outline: #ffe4a8 solid 2px;
   color: var(--clr-rosa);
   display: flex;
   align-items: center;

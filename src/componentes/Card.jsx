@@ -12,6 +12,7 @@ export const Card = ({ foto, modal, href, nombreBoton, className, iframe, src })
         href ? (
           // Crea el boton con el link
           <>
+
             <Boton href={href} nombreBoton={nombreBoton}>
             </Boton>
           </>

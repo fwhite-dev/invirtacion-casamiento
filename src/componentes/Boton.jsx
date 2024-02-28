@@ -2,7 +2,7 @@ import "../styles/btn.css";
 // eslint-disable-next-line react/prop-types
 export const Boton = ({ nombreBoton, href }) => {
   return (
-    <div className="contenedor">
+    <div className="contenedor-btn">
       <a className="btn btn-abrir-modal" target="_blank" href={href}>
         <svg className="icono"
           width="16"
