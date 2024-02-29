@@ -37,11 +37,11 @@
   cursor: pointer;
   place-self: flex-end;
 }
-/* @media (width >= 768px) {
+@media (width < 768px) {
   .modal-overlay {
-    width: 50%;
+    width: 90%;
   }
-} */
+}
 
 .modal-content {
   display: flex;

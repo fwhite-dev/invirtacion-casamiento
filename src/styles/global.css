@@ -11,14 +11,6 @@ html {
   font-family: var(--font-Confortaa);
   text-wrap: pretty;
   font-size: 24px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 32px;
-    outline: var(--borde-color) solid var(--grosor-outline);
-  }
 }
 body {
   overflow-x: hidden;
@@ -26,13 +18,21 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  outline: var(--borde-color) solid var(--grosor-outline);
+}
 
 /* === removing default button style ===*/
 .titulo {
   background-color: var(--background-color);
-  padding: 2rem;
+  padding-top: 1rem;
   color: var(--color-dorado);
   text-align: center;
+  text-wrap: pretty;
 }
 .contenerdor-grid {
   display: grid;
@@ -151,6 +151,11 @@ iframe {
 }
 
 @media (width < 768px) {
+  .titulo {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .contenerdor-grid {
     grid-template-columns: 160px 160px;
     grid-template-rows: repeat(8, 160px);
