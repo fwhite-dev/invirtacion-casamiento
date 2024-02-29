@@ -39,8 +39,8 @@ function App() {
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3396.6763801173943!2d-63.901914923644306!3d-31.642709974158155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM4JzMzLjgiUyA2M8KwNTMnNTcuNiJX!5e0!3m2!1ses!2sar!4v1708378242355!5m2!1ses!2sar"
         />
         <div className="menu" onClick={() => { setShowModal(true) }}>
-          {showModal && <Modal cerrarModal={() => { setShowModal(false) }} />}
         </div>
+        {showModal && <Modal cerrarModal={() => { setShowModal(false) }} />}
 
         <div className="regalos btn-abrir-modal" onMouseEnter={() => {
           const iconoAnimado = document.querySelector(".icono-regalo");
