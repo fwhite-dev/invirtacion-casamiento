@@ -13,22 +13,33 @@ export const Modal = ({ cerrarModal }) => {
         </button>
         <div className="modal-content">
           <h2>Menu</h2>
-          <p>Menú 2
-            Recepción
-            Mini bocaditos frios y calientes
-            Primer tiempo
-            Peceto y verduras escabechadas sobre colchón de hojas verdes acompañado con diferentes cazuelas
-            Segundo tiempo
-            Bondiola de cerdo con reducción de malbec y crema de calabazas
-            Tercer tiempo
-            Vacío de ternera con papas doradas
-            Cuarto tiempo
-            Matambre con ensaladas varias
-            Quinto tiempo
-            Brouwni con crema americana y salsa de caramelo
-            Mesa dulce y torta
-            Trasnoche
-            Tacos y fajitas
+          <p>
+            <h4>🍹Recepción🍹</h4>
+            🥪Mini bocaditos fríos y calientes🥟
+            <h4>Primer tiempo</h4>
+            🥩Peceto y verduras escabechadas, acompañado con diferentes cazuelas🥗
+            <h4>Segundo tiempo</h4>
+            🍷Bondiola de cerdo con reducción de malbec y crema de calabazas🥩
+            <h4>
+              Tercer tiempo
+            </h4>
+            🍖Vacío de ternera con papas doradas🍟
+            <h4>
+              Cuarto tiempo
+            </h4>
+            🍎Matambre con ensaladas varias🍖
+            <h4>
+              Quinto tiempo
+            </h4>
+            🥞Brouwni con crema americana y salsa de caramelo
+            <br />
+            🧁Mesa dulce
+            <br />
+            🍰Torta
+            <h4>
+              Trasnoche
+            </h4>
+            🌮Tacos y fajitas🍺
 
           </p>
           {/* <h2>Regalos</h2>

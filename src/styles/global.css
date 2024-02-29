@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 html {
-  font-family: var(--font-Bodoni);
+  font-family: var(--font-Confortaa);
+  text-wrap: pretty;
   font-size: 24px;
 }
 body {

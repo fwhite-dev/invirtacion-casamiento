@@ -21,12 +21,12 @@
   --color-verde: #708d81;
   --color-verde-agua: #6ed2b7;
   --color-amarillo: #ffe4a8;
-  --color-color--dorado: #ffb703;
+  --color-dorado: #ffb703;
 
   --font-Bodoni: "Bodoni Moda", sans-serif;
   --font-Confortaa: "Confortaa", sans-serif;
   --font-Satisfy: "Satisfy", sans-serif;
   --background-color: var(--color-azul-oscuro);
-  --borde-color: var(--color-color--dorado);
+  --borde-color: var(--color-dorado);
   --relleno-divs: var(--color-azul);
 }

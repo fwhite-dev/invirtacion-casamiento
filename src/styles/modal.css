@@ -12,10 +12,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  line-height: 2;
+
+  h4 {
+    text-decoration-line: underline;
+    text-decoration-color: var(
+      --color-dorado
+    ); /* Puedes cambiar el color según tus preferencias */
+    text-decoration-thickness: 2px; /* Puedes ajustar el grosor según tus preferencias */
+    text-underline-offset: 4px;
+  }
 }
 
 .modal-overlay {
+  text-wrap: pretty;
+  font-size: 16px;
   display: flex;
+  width: 50%;
+  height: 50%;
   flex-direction: column;
   gap: 5px;
 }
@@ -23,6 +38,11 @@
   cursor: pointer;
   place-self: flex-end;
 }
+/* @media (width >= 768px) {
+  .modal-overlay {
+    width: 50%;
+  }
+} */
 
 .modal-content {
   display: flex;
