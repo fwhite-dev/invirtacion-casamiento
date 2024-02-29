@@ -15,3 +15,7 @@
   --borde-color: var(--color-color--dorado);
   --relleno-divs: var(--color-azul);
 }
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("/invitacion-final/src/assets/Satisfy-Regular.ttf");
+}
