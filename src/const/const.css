@@ -3,7 +3,7 @@
   src: url("../../public/fonts/BodoniModa.ttf");
 }
 @font-face {
-  font-family: "Cofortaa";
+  font-family: "Confortaa";
   src: url("../../public/fonts/Confortaa.ttf");
 }
 @font-face {
@@ -23,12 +23,10 @@
   --color-amarillo: #ffe4a8;
   --color-color--dorado: #ffb703;
 
-  --font-family-1: "Bodoni Moda", sans-serif;
-  --font-family-2: "Cofortaa", sans-serif;
-  --font-family-3: "Satisfy", sans-serif;
+  --font-Bodoni: "Bodoni Moda", sans-serif;
+  --font-Confortaa: "Confortaa", sans-serif;
+  --font-Satisfy: "Satisfy", sans-serif;
   --background-color: var(--color-azul-oscuro);
   --borde-color: var(--color-color--dorado);
   --relleno-divs: var(--color-azul);
-
-  font-family: var(--font-family-1);
 }
