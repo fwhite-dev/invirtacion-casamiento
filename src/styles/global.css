@@ -8,9 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: var(--font-family);
-}
 body {
   overflow-x: hidden;
 }

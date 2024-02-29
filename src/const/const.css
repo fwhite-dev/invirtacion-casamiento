@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Bodoni Moda";
-  src: url("/invitacion-final/public/fonts/BodoniModa.ttf");
+  src: url("../../public/fonts/BodoniModa.ttf");
 }
 @font-face {
   font-family: "Cofortaa";
-  src: url("/invitacion-final/public/fonts/Cofortaa.ttf");
+  src: url("../../public/fonts/Confortaa.ttf");
 }
 @font-face {
   font-family: "Satisfy";
-  src: url("/invitacion-final/public/fonts/Satisfy.ttf");
+  src: url("../../public/fonts/Satisfy.ttf");
 }
 
 :root {
@@ -23,8 +23,12 @@
   --color-amarillo: #ffe4a8;
   --color-color--dorado: #ffb703;
 
-  --font-family: "Bodoni Moda", sans-serif;
+  --font-family-1: "Bodoni Moda", sans-serif;
+  --font-family-2: "Cofortaa", sans-serif;
+  --font-family-3: "Satisfy", sans-serif;
   --background-color: var(--color-azul-oscuro);
   --borde-color: var(--color-color--dorado);
   --relleno-divs: var(--color-azul);
+
+  font-family: var(--font-family-1);
 }

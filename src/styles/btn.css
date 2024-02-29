@@ -1,6 +1,7 @@
 @import "../const/const.css";
 
 .contenedor-btn {
+  font-family: var(--font-family-2);
   position: relative;
   background-color: var(--relleno-divs);
   width: 100%;
