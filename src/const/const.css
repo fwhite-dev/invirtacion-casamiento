@@ -29,4 +29,5 @@
   --background-color: var(--color-azul-oscuro);
   --borde-color: var(--color-dorado);
   --relleno-divs: var(--color-azul);
+  --grosor-outline: 3px;
 }
