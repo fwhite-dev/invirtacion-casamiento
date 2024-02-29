@@ -2,14 +2,14 @@
 import { X } from 'lucide-react';
 
 import "../styles/modal.css";
-export const Modal = ({ cerrarModal }) => {
+export const ModalMenu = ({ cerrarModalMenu }) => {
 
 
 
   return (
     <div className="modal">
       <div className="modal-overlay">
-        <button className="modal-btn-cerrar" onClick={cerrarModal} >
+        <button className="modal-btn-cerrar" onClick={cerrarModalMenu} >
           <X size={32} />
         </button>
         <div className="modal-content">

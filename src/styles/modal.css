@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   padding-top: 10%;
-  padding-bottom: 30%;
+  padding-bottom: 70%;
 
   z-index: 2;
   backdrop-filter: blur(4px);
@@ -39,13 +39,16 @@
   height: 50%;
   flex-direction: column;
   gap: 5px;
+  position: relative;
 }
 .modal-btn-cerrar {
   color: var(--color-dorado);
   background-color: transparent;
   border: none;
   cursor: pointer;
-  place-self: flex-end;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 @media (width < 768px) {
   .modal-overlay {
