@@ -1,19 +1,12 @@
+@import "../const/const.css";
+
 .contenedor-btn {
-  --clr-bisque: #ffe4c4;
-  --clr-white: #fff;
-  --clr-gris: #f7f2f2;
-  --clr-azul: #98d0ff;
-  --clr-rosa: #ffc6d7;
-  --clr-amarillo: #ffe4a8;
-  --clr-verde: #708d81;
-  --clr-verde-agua: #6ed2b7;
-  --clr-azul-oscuro: #001427;
   position: relative;
-  background-color: #6096ba;
+  background-color: var(--relleno-divs);
   width: 100%;
   height: 100%;
   border-radius: 32px;
-  outline: #ffe4a8 solid 2px;
+  outline: var(--borde-color) solid 2px;
 }
 .btn {
   display: block;

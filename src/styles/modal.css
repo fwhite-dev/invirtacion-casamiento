@@ -1,4 +1,7 @@
+@import "../const/const.css";
+
 .modal {
+  font-family: var(--font-family);
   color: white;
   position: fixed;
   inset: 0;

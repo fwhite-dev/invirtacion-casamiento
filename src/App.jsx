@@ -1,16 +1,14 @@
-import { Card } from "./componentes/Card";
 import "animate.css";
+import { Card } from "./componentes/Card";
 import { Modal } from "./componentes/Modal";
 import { useState } from "react";
 
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-
-
-
   return (
     <div className="contenedor">
+      <h1 className="titulo">💍 Boda Flor y Fede 💖</h1>
       <div className="contenerdor-grid">
         <Card
           className="form-alergias"
@@ -75,7 +73,5 @@ function App() {
     </div>
   );
 
-
 }
-
 export default App;

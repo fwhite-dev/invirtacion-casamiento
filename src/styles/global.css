@@ -1,3 +1,5 @@
+@import "../const/const.css";
+
 *,
 *::after,
 |*::before {
@@ -5,21 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --clr-white: #fff;
-  --clr-gris: #f7f2f2;
-  --clr-azul: #98d0ff;
-  --clr-rosa: #ffc6d7;
-  --clr-amarillo: #ffe4a8;
-  --clr-verde: #708d81;
-  --clr-verde-agua: #6ed2b7;
-  --clr-azul-oscuro: #001427;
-  --ff-title: "Poppins", sans-serif;
-  --ff-body: "Poppins", sans-serif;
-  --fw-regular: 400;
-}
+
 html {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-family);
 }
 body {
   overflow-x: hidden;
@@ -29,10 +19,15 @@ a {
 }
 
 /* === removing default button style ===*/
-
+.titulo {
+  background-color: var(--background-color);
+  padding: 2rem;
+  color: var(--color-rosa);
+  text-align: center;
+}
 .contenerdor-grid {
   display: grid;
-  background-color: var(--clr-azul-oscuro);
+  background-color: var(--background-color);
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, minmax(80px, 160px));
@@ -45,7 +40,7 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 32px;
-  outline: #ffe4a8 solid 2px;
+  outline: var(--borde-color) solid 2px;
 }
 
 @media (width >= 768px) {
@@ -88,19 +83,19 @@ img {
   }
 }
 .relog {
-  background-color: var(--clr-white);
-  color: var(--clr-rosa);
+  background-color: var(--color-white);
+  color: var(--color-rosa);
 }
 
 .menu {
   border-radius: 32px;
-  outline: 2px solid var(--clr-amarillo);
+  outline: 2px solid var(--borde-color);
 }
 .regalos {
-  background-color: var(--clr-verde-agua);
+  background-color: var(--color-verde-agua);
   border-radius: 32px;
-  outline: #ffe4a8 solid 2px;
-  color: var(--clr-rosa);
+  outline: var(--borde-color) solid 2px;
+  color: var(--color-rosa);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +107,7 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: var(--clr-rosa);
+    background-color: var(--color-rosa);
   }
   .icono-regalo {
     z-index: 1;
@@ -125,16 +120,18 @@ img {
   height: 160px;
 }
 iframe {
-  outline: var(--clr-white) solid 2px;
+  outline: var(--borde-color) solid 2px;
 }
 
 .dress-code {
   position: relative;
-  background-color: var(--clr-verde-agua);
+  border-radius: 32px;
+  background-color: var(--color-verde-agua);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: var(--borde-color) solid 2px;
 
   span {
     z-index: 1;
@@ -147,7 +144,7 @@ iframe {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: var(--clr-rosa);
+    background-color: var(--color-rosa);
   }
 }
 

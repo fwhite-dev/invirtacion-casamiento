@@ -1,0 +1,17 @@
+:root {
+  --color-azul-oscuro: #001427;
+  --color-bisque: #ffe4c4;
+  --color-white: #fff;
+  --color-gris: #f7f2f2;
+  --color-azul: #98d0ff;
+  --color-rosa: #ffc6d7;
+  --color-verde: #708d81;
+  --color-verde-agua: #6ed2b7;
+  --color-amarillo: #ffe4a8;
+  --color-color--dorado: #ffb703;
+
+  --font-family: "Bodoni Moda", "Satisfy", "Comfortaa";
+  --background-color: var(--color-azul-oscuro);
+  --borde-color: var(--color-color--dorado);
+  --relleno-divs: var(--color-azul);
+}
