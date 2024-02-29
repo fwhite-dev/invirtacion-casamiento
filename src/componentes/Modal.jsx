@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-// import { X } from 'lucide-react';
+import { X } from 'lucide-react';
+
 import "../styles/modal.css";
 export const Modal = ({ cerrarModal }) => {
 
@@ -9,7 +10,7 @@ export const Modal = ({ cerrarModal }) => {
     <div className="modal">
       <div className="modal-overlay">
         <button className="modal-btn-cerrar" onClick={cerrarModal} >
-          cerrar
+          <X size={32} />
         </button>
         <div className="modal-content">
           <h2>Menu</h2>

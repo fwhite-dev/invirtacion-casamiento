@@ -41,7 +41,9 @@
   gap: 5px;
 }
 .modal-btn-cerrar {
-  z-index: 3;
+  color: var(--color-dorado);
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   place-self: flex-end;
 }
