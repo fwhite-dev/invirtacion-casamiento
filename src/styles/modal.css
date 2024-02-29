@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   padding-top: 10%;
-  padding-bottom: 70%;
+  padding-bottom: 120%;
 
   z-index: 2;
   backdrop-filter: blur(4px);
@@ -23,10 +23,8 @@
 
   h4 {
     text-decoration-line: underline;
-    text-decoration-color: var(
-      --color-dorado
-    ); /* Puedes cambiar el color según tus preferencias */
-    text-decoration-thickness: 2px; /* Puedes ajustar el grosor según tus preferencias */
+    text-decoration-color: var(--color-dorado);
+    text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
 }

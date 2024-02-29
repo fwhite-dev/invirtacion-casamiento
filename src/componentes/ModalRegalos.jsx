@@ -16,9 +16,7 @@ export const ModalRegalos = ({ cerrarModalRegalos }) => {
                     <p>CBU: 0000000000000000000</p>
                     <br />
                     <p>Banco provincia de Cordoba</p>
-                    <form action="https://formsubmit.co/fdewhite@gmail.com" method="POST">
 
-                    </form>
                 </div>
             </div>
         </div>
