@@ -3,6 +3,10 @@ import { Card } from "./componentes/Card";
 import { ModalMenu } from "./componentes/ModalMenu";
 import { useState } from "react";
 import { ModalRegalos } from "./componentes/ModalRegalos";
+import foto1 from "./assets/img/foto1.jpg";
+import foto2 from "./assets/img/foto2.jpg";
+import foto3 from "./assets/img/foto3.jpg";
+
 
 
 function App() {
@@ -62,16 +66,20 @@ function App() {
 
         <div className="relog">Reloj</div>
         <div className="dress-code">
-          <span>
-            Dress code:<br /> Elegante Sport
+          <span className="dress-code-text">
+            <h4 className="subtitulo">Dress Code</h4>
+            <p>
+              Elegante Sport
+            </p>
           </span>
 
           <div className="circulo"></div>
         </div>
 
-        <Card className="foto-0" foto="../public/img/foto3.jpg" />
-        <Card className="foto-1" foto="../public/img/foto3.jpg" />
-        <Card className="foto-2" foto="../public/img/foto3.jpg" />
+        <img className="foto-0" src={foto3} />
+        <img className="foto-1" src={foto2} />
+        <img className="foto-2" src={foto1} />
+
       </div >
     </div>
   );

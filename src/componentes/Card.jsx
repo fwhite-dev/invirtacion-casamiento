@@ -1,21 +1,20 @@
 import { Boton } from "./Boton"
 
 // eslint-disable-next-line react/prop-types
-export const Card = ({ foto, modal, href, nombreBoton, className, iframe, src }) => {
+export const Card = ({ modal, href, nombreBoton, className, iframe, src }) => {
 
   const iframeStyle = { borderRadius: "32px", border: "none", opacity: "0.9" }
 
+  const imgSrc = src
+  console.log(imgSrc)
 
   return (
     < div className={className} >
       {
         href ? (
           // Crea el boton con el link
-          <>
-
-            <Boton href={href} nombreBoton={nombreBoton}>
-            </Boton>
-          </>
+          <Boton href={href} nombreBoton={nombreBoton}>
+          </Boton>
         ) : iframe ? (
           <iframe
             src={src}
@@ -27,10 +26,9 @@ export const Card = ({ foto, modal, href, nombreBoton, className, iframe, src })
           ></iframe>
         ) : modal ? (
           <Boton nombreBoton={nombreBoton}></Boton>
-        ) : foto ? (
+        ) : src ? (
 
-          <img src={foto} style={{ width: "100%" }} alt="foto" />
-
+          <img src={'../assets/img/foto3.jpg'} alt="imagen" />
         ) : (
           <div className="text">{nombreBoton}</div>
         )

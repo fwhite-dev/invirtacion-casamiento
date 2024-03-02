@@ -1,0 +1,231 @@
+@import "./const/const.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--font-Confortaa);
+  text-wrap: pretty;
+}
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  outline: var(--borde-color) solid var(--grosor-outline);
+}
+
+/* === removing default button style ===*/
+.titulo {
+  font-size: var(--font-size-titulo);
+  background-color: var(--background-color);
+  padding-top: 1rem;
+  color: var(--color-dorado);
+  text-align: center;
+}
+.subtitulo {
+  font-size: var(--font-size-subtitulo);
+  text-decoration-color: var(--color-azul-oscuro);
+  padding: 1rem;
+  font-weight: 800;
+  /* text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; */
+}
+.contenerdor-grid {
+  display: grid;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, minmax(80px, 160px));
+  grid-template-rows: repeat(6, minmax(80px, 160px));
+  gap: 20px;
+  padding: 1rem;
+}
+
+@media (width >= 768px) {
+  .foto-0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .relog {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .menu {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+  }
+  .regalos {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+  .ubicacion-salon {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+  }
+  .form-alergias {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+  }
+  .foto-1 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 7;
+  }
+
+  .foto-2 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 7;
+  }
+  .dress-code {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  }
+}
+.relog {
+  background-color: var(--color-white);
+  color: var(--color-rosa);
+}
+
+.menu {
+  border-radius: 32px;
+  outline: var(--grosor-outline) solid var(--borde-color);
+}
+.regalos {
+  background-color: var(--color-verde-agua);
+  border-radius: 32px;
+  outline: var(--borde-color) solid var(--grosor-outline);
+  color: var(--color-rosa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .circulo-fondo-regalos {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--color-rosa);
+  }
+  .icono-regalo {
+    z-index: 1;
+  }
+}
+
+.mapa {
+  display: block;
+  width: 340px;
+  height: 160px;
+}
+iframe {
+  outline: var(--borde-color) solid var(--grosor-outline);
+}
+
+.dress-code {
+  position: relative;
+  border-radius: 32px;
+  background-color: var(--color-verde-agua);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: var(--borde-color) solid var(--grosor-outline);
+  color: var(--color-azul-oscuro);
+
+  span {
+    z-index: 1;
+  }
+
+  div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--color-rosa);
+  }
+
+  p {
+    font-size: var(--font-size-body);
+    font-weight: 900;
+    padding-left: 1rem;
+  }
+}
+
+@media (width < 768px) {
+  .titulo {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .contenerdor-grid {
+    grid-template-columns: 160px 160px;
+    grid-template-rows: repeat(8, 160px);
+  }
+  .foto-0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .ubicacion-salon {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .regalos {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+  }
+  .ubicacion-iglesia {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .menu {
+    grid-column: 2 / 3;
+    grid-row: 5 / 7;
+  }
+  .trafic {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .relog {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+  .form-alergias {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .dress-code {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+  }
+  .foto-1 {
+    grid-column: 1 / 3;
+    grid-row: 9 / 11;
+  }
+  .foto-2 {
+    grid-column: 1 / 3;
+    grid-row: 11 / 13;
+  }
+}

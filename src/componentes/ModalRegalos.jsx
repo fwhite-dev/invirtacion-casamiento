@@ -11,7 +11,7 @@ export const ModalRegalos = ({ cerrarModalRegalos }) => {
                 <div className="modal-content">
 
                     <h2>Regalos</h2>
-                    <p>Alias: NombreApellido</p>
+                    <p>Alias: florenciasoco</p>
                     <br />
                     <p>CBU: 0000000000000000000</p>
                     <br />
