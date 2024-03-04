@@ -3,9 +3,12 @@ import { Card } from "./componentes/Card";
 import { ModalMenu } from "./componentes/ModalMenu";
 import { useState } from "react";
 import { ModalRegalos } from "./componentes/ModalRegalos";
-import foto1 from "./assets/img/foto1.jpg";
-import foto2 from "./assets/img/foto2.jpg";
-import foto3 from "./assets/img/foto3.jpg";
+
+
+import foto28 from "./assets/img/img28.avif";
+
+import foto31 from "./assets/img/img31.avif";
+
 
 
 
@@ -76,9 +79,18 @@ function App() {
           <div className="circulo"></div>
         </div>
 
-        <img className="foto-0" src={foto3} />
-        <img className="foto-1" src={foto2} />
-        <img className="foto-2" src={foto1} />
+        <picture className="foto-0">
+          <source srcSet={foto28} />
+          <img width="340px" height="520px" />
+        </picture>
+        <picture className="foto-1">
+          <source srcSet={foto31} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="foto-2" >
+          <source srcSet={foto31} />
+          <img width="160px" height="340px" loading="lazy" alt="Foto de los novios" />
+        </picture>
 
       </div >
     </div>
