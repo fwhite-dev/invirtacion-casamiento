@@ -6,108 +6,31 @@
   background-color: var(--relleno-divs);
   width: 100%;
   height: 100%;
-  color: #000;
-  font-weight: 800;
   font-size: var(font-size-body);
-
+  font-weight: 800;
   border-radius: 32px;
   outline: var(--borde-color) solid var(--grosor-outline);
 }
 .btn {
+  color: #000;
+  width: 120px;
+  height: 32px;
+  margin: 0;
+  padding: 8px;
   display: block;
+  position: absolute;
   top: calc(100% - 54px);
   left: 16px;
-  display: flex;
 
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
+  justify-content: space-evenly;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
   background-color: #fff;
 
-  position: relative;
-  animation: animacion-btn linear both;
-
-  animation-timeline: scroll(root block);
-  animation-range: 0 var(--rango-animacion);
-}
-
-@keyframes animacion-btn {
-  to {
-    width: 100px;
-    border-radius: 32px;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
-      rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
-
-    /* .contenedor-btn .btn {
-    } */
-    /* .contenedor-btn .icono {
-      position: absolute;
-      left: 70%;
-    } */
-  }
-}
-
-.icono {
-  animation: animacion-icono-btn linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0 var(--rango-animacion);
-}
-
-@keyframes animacion-icono-btn {
-  to {
-    position: absolute;
-    left: 70%;
-  }
-}
-
-.text {
-  animation: animacion-texto-btn linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0 var(--rango-animacion);
-}
-
-@keyframes animacion-texto-btn {
-  to {
-    position: absolute;
-    right: 15%;
-    opacity: 1;
-    width: 70%;
-  }
-}
-
-/* .contenedor-btn:hover .btn {
-  width: 100px;
   border-radius: 32px;
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
     rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
-
-  transition-duration: 0.3s;
-}
-
-.contenedor-btn:hover .icono {
-  position: absolute;
-  left: 70%;
-  transition-duration: 0.3s;
-} */
-
-/* text */
-.text {
-  font-size: 12px;
-  width: 0;
-  opacity: 0;
-  color: #212121;
-  transition-duration: 0.3s;
-}
-
-.contenedor-btn:hover .text {
-  position: absolute;
-  right: 15%;
-  opacity: 1;
-  width: 70%;
-  transition-duration: 0.4s;
 }

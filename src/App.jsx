@@ -67,8 +67,9 @@ function App() {
         </div>
         {showModalRegalos && <ModalRegalos cerrarModalRegalos={() => { setShowModalRegalos(false) }} />}
 
-        <div className="relog">Reloj</div>
+        <div className="relleno"></div>
         <div className="dress-code">
+
           <span className="dress-code-text">
             <h4 className="subtitulo">Dress Code</h4>
             <p>

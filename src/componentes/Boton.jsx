@@ -13,14 +13,14 @@ export const Boton = ({ nombreBoton, href }) => {
         >
           <path
             d="M8.76974 1.24124L1.24121 8.76977"
-            stroke="#212121"
+            stroke="#000"
             strokeWidth="0.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.48438 1.20325L8.76964 1.24024L8.80762 6.5255"
-            stroke="#212121"
+            stroke="#000"
             strokeWidth="0.8"
             strokeLinecap="round"
             strokeLinejoin="round"

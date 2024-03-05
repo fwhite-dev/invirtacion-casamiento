@@ -27,10 +27,10 @@
   --font-Confortaa: "Confortaa", sans-serif;
   --font-Satisfy: "Satisfy", sans-serif;
   --font-size-titulo: 48px;
-  --font-size-subtitulo: 1.2rem;
-  --font-size-body: 1rem;
+  --font-size-subtitulo: 1rem;
+  --font-size-body: 0.75rem;
 
-  --background-color: var(--color-azul-oscuro);
+  --background-color: var(--color-gris);
   --borde-color: var(--color-dorado);
   --relleno-divs: var(--color-azul);
   --grosor-outline: 3px;
