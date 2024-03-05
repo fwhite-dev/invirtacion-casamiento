@@ -17,7 +17,8 @@ function App() {
   const [showModalRegalos, setShowModalRegalos] = useState(false);
   return (
     <div className="contenedor">
-      <h1 className="titulo">💍 Boda Flor y Fede 💖</h1>
+      <h1 className="titulo">💍Nuestra boda <br />
+        Flor y Fede 🩷</h1>
       <div className="contenerdor-grid">
         <Card
           className="form-alergias"

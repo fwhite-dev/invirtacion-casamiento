@@ -28,9 +28,8 @@
   border: none;
   cursor: pointer;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--relleno-botones);
 
   border-radius: 32px;
-  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
-    rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
+  /* box-shadow: var(--color-rosa) 0px 0px 0px 1px; */
 }

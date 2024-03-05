@@ -39,7 +39,7 @@ img {
   font-size: var(--font-size-titulo);
   background-color: var(--background-color);
   padding-top: 1rem;
-  color: var(--color-dorado);
+  color: var(--color-titulo);
   text-align: center;
 }
 .subtitulo {

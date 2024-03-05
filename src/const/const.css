@@ -31,7 +31,9 @@
   --font-size-body: 0.75rem;
 
   --background-color: var(--color-gris);
-  --borde-color: var(--color-dorado);
-  --relleno-divs: var(--color-azul);
+  --relleno-divs: var(--color-gris);
+  --relleno-botones: var(--color-bisque);
+  --color-titulo: var(--color-verde-agua);
+  --borde-color: var(--color-verde-agua);
   --grosor-outline: 3px;
 }
