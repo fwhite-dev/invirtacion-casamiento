@@ -32,8 +32,8 @@
 
   --background-color: var(--color-gris);
   --relleno-divs: var(--color-gris);
-  --relleno-botones: var(--color-bisque);
-  --color-titulo: var(--color-verde-agua);
-  --borde-color: var(--color-verde-agua);
+  --relleno-botones: var(--color-amarillo);
+  --color-titulo: var(--color-dorado);
+  --borde-color: var(--color-azul-oscuro);
   --grosor-outline: 3px;
 }
