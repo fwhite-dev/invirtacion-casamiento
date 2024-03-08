@@ -72,7 +72,7 @@ function App() {
         <div className="dress-code">
 
           <span className="dress-code-text">
-            <h4 className="subtitulo">Dress Code</h4>
+            <h4>Dress Code</h4>
             <p>
               Elegante Sport
             </p>

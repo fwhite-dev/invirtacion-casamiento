@@ -1,11 +1,7 @@
 /* eslint-disable react/prop-types */
 import { X } from 'lucide-react';
-
 import "../styles/modal.css";
 export const ModalMenu = ({ cerrarModalMenu }) => {
-
-
-
   return (
     <div className="modal">
       <div className="modal-overlay">
@@ -41,18 +37,7 @@ export const ModalMenu = ({ cerrarModalMenu }) => {
               Trasnoche
             </h4>
             🌮Tacos y fajitas🍺
-
           </p>
-          {/* <h2>Regalos</h2>
-          <p>Alias: NombreApellido</p>
-          <br />
-          <p>CBU: 0000000000000000000</p>
-          <br />
-          <p>Banco provincia de Cordoba</p>
-          <form action="">
-
-            <textarea placeholder='Dejamos tus comentarios y deseos' cols={50} rows={12}></textarea>
-          </form> */}
         </div>
       </div>
     </div>

@@ -9,13 +9,15 @@ export const ModalRegalos = ({ cerrarModalRegalos }) => {
                     <X size={32} />
                 </button>
                 <div className="modal-content">
-
-                    <h2>Regalos</h2>
-                    <p>Alias: florenciasoco</p>
+                    <h2 className='regalos-titulo'>Regalos</h2>
+                    <p className='regalos-alias'>Alias: florenciasoco</p>
                     <br />
-                    <p>CBU: 0000000000000000000</p>
+                    <p className='regalos-numero'>CBU:
+                        <span>
+                            0000003100099953207963
+                        </span>
+                    </p>
                     <br />
-                    <p>Banco provincia de Cordoba</p>
 
                 </div>
             </div>

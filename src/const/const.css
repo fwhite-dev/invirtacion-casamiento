@@ -26,7 +26,7 @@
   --font-Bodoni: "Bodoni Moda", sans-serif;
   --font-Confortaa: "Confortaa", sans-serif;
   --font-Satisfy: "Satisfy", sans-serif;
-  --font-size-titulo: 48px;
+  --font-size-titulo: 64px;
   --font-size-subtitulo: 1rem;
   --font-size-body: 0.75rem;
 
@@ -34,6 +34,6 @@
   --relleno-divs: var(--color-gris);
   --relleno-botones: var(--color-amarillo);
   --color-titulo: var(--color-dorado);
-  --borde-color: var(--color-azul-oscuro);
+  --borde-color: var(--color-dorado);
   --grosor-outline: 3px;
 }
