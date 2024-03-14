@@ -49,6 +49,9 @@ function App() {
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3396.6763801173943!2d-63.901914923644306!3d-31.642709974158155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM4JzMzLjgiUyA2M8KwNTMnNTcuNiJX!5e0!3m2!1ses!2sar!4v1708378242355!5m2!1ses!2sar"
         />
         <div className="menu" onClick={() => { setShowModalMenu(true) }}>
+          <video>
+            <source src="./assets/inconos-animados/bandeja-de-comida.mp4"></source>
+          </video>
         </div>
         {showModalMenu && <ModalMenu cerrarModalMenu={() => { setShowModalMenu(false) }} />}
 
@@ -68,7 +71,12 @@ function App() {
         </div>
         {showModalRegalos && <ModalRegalos cerrarModalRegalos={() => { setShowModalRegalos(false) }} />}
 
-        <div className="relleno"></div>
+        <div className="relleno">
+          <h2>Ceremonia</h2>
+          <p> Viernes 5 Abril 20hs</p>
+          <h2>Fiesta</h2>
+          <p>Viernes 5 Abril 21:30hs</p>
+        </div>
         <div className="dress-code">
 
           <span className="dress-code-text">
