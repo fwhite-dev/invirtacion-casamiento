@@ -109,6 +109,15 @@ img {
   background-color: var(--color-verde-agua);
   border-radius: 32px;
   outline: var(--grosor-outline) solid var(--borde-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
 }
 .regalos {
   border-radius: 32px;
