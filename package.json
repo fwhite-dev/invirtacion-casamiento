@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lordicon/react": "^1.6.0",
     "animate.css": "^4.1.1",
     "lucide": "^0.341.0",
     "lucide-react": "^0.343.0",

@@ -103,6 +103,10 @@ img {
   border-radius: 32px;
   outline: var(--grosor-outline) solid var(--borde-color);
   background-color: var(--color-rosa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .relleno {
   background-color: var(--color-verde-agua);
@@ -190,9 +194,8 @@ iframe {
     grid-template-rows: repeat(8, 160px);
   }
   .foto-0 {
-    transform: rotate(90deg);
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
   }
   .relleno {
     grid-column: 1 / 3;
