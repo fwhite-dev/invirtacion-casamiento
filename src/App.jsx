@@ -8,6 +8,10 @@ import { ModalRegalos } from "./componentes/ModalRegalos";
 import foto28 from "./assets/img/img28.avif";
 
 import foto31 from "./assets/img/img31.avif";
+import foto1 from "./assets/img/foto1.avif";
+import foto2 from "./assets/img/foto2.avif";
+import foto18 from "./assets/img/foto18.avif";
+
 
 
 
@@ -90,11 +94,11 @@ function App() {
         </div>
 
         <picture className="foto-0">
-          <source srcSet={foto28} />
+          <source srcSet={foto1} />
           <img width="340px" height="520px" />
         </picture>
         <picture className="foto-1">
-          <source srcSet={foto31} />
+          <source srcSet={foto18} />
           <img width="340px" height="520px" loading="lazy" />
         </picture>
         <picture className="foto-2" >
