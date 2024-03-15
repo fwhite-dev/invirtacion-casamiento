@@ -153,7 +153,7 @@ function App() {
 
         <div className="relleno">
           <h2>Ceremonia</h2>
-          <p> Viernes 5 Abril 20hs</p>
+          <p> Viernes 5 Abril 19:30hs</p>
           <h2>Fiesta</h2>
           <p>Viernes 5 Abril 21:30hs</p>
         </div>
