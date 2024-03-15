@@ -25,23 +25,34 @@ function App() {
 
 
   useEffect(() => {
-    let divRegalos = document.querySelector(".regalos");
-    const iconoAnimado = document.querySelector(".icono-regalo");
-    function verificarVisibilidad(e) {
+    let divMenu = document.querySelector(".menu");
+    const iconoMenu = document.querySelector(".lucide-utensils");
+    function verificarVisibilidadMenu(e) {
       if (e[0].isIntersecting) {
-        console.log("visible")
-        iconoAnimado.classList.add("animate__animated", "animate__bounce");
+        iconoMenu.classList.add("animate__animated", "animate__bounce");
       } else {
-        console.log("no visible")
-          ;
-        iconoAnimado.classList.remove("animate__animated", "animate__bounce");
+        iconoMenu.classList.remove("animate__animated", "animate__bounce");
       }
-
     }
+    let observerMenu = new IntersectionObserver(verificarVisibilidadMenu, {
+      threshold: 0.8
+    })
 
-    let observer = new IntersectionObserver(verificarVisibilidad, {})
+    let divRegalo = document.querySelector(".regalos");
+    const iconoRegalo = document.querySelector(".icono-regalo");
+    function visibilidadDivRegalo(e) {
+      if (e[0].isIntersecting) {
+        iconoRegalo.classList.add("animate__animated", "animate__bounce");
+      } else {
+        iconoRegalo.classList.remove("animate__animated", "animate__bounce");
+      }
+    }
+    let observerRegalos = new IntersectionObserver(visibilidadDivRegalo, {
+      threshold: 0.8
+    })
 
-    observer.observe(divRegalos);
+    observerRegalos.observe(divRegalo);
+    observerMenu.observe(divMenu);
   }, []
   );
 
@@ -80,12 +91,8 @@ function App() {
           iframe={true}
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3396.6763801173943!2d-63.901914923644306!3d-31.642709974158155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM4JzMzLjgiUyA2M8KwNTMnNTcuNiJX!5e0!3m2!1ses!2sar!4v1708378242355!5m2!1ses!2sar"
         />
-        <div className="menu" onClick={() => { setShowModalMenu(true) }} onTouchMove={
-          () => {
-            const iconoAnimadoMenu = document.querySelector(".icono-menu");
-            iconoAnimadoMenu.classList.add("animate__animated", "animate__bounce");
-          }
-        } >
+        <div className="menu"
+          onClick={() => { setShowModalMenu(true) }}  >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="64"
@@ -101,18 +108,12 @@ function App() {
             <path d="M7 2v20" />
             <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
           </svg>
-
         </div>
         {showModalMenu && <ModalMenu cerrarModalMenu={() => { setShowModalMenu(false) }} />}
 
 
-        <div className="regalos btn-abrir-modal" onTouchStart={() => {
-          const iconoAnimado = document.querySelector(".icono-regalo");
-          iconoAnimado.classList.add("animate__animated", "animate__bounce");
-        }} onTouchEnd={() => {
-          const iconoAnimado = document.querySelector(".icono-regalo");
-          iconoAnimado.classList.remove("animate__animated", "animate__bounce");
-        }} onClick={() => { setShowModalRegalos(true) }}>
+        <div className="regalos btn-abrir-modal"
+          onClick={() => { setShowModalRegalos(true) }}>
           <div className="icono-regalo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
