@@ -10,39 +10,29 @@
   border-radius: 32px;
   outline: var(--borde-color) solid var(--grosor-outline);
 }
+.lucide-clipboard-type,
+.lucide-map-pin {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 32px);
+}
 .btn {
   display: block;
-  color: #000;
+  color: var(color-azul-oscuro);
   width: 120px;
   height: 32px;
   margin: 0;
   padding: 8px;
   position: absolute;
   top: calc(100% - 54px);
-  left: 16px;
+  left: calc(50% - 60px);
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 16px;
+  justify-content: space-evenly;
   border: none;
   cursor: pointer;
   overflow: hidden;
   background-color: var(--relleno-botones);
   border-radius: 32px;
-}
-.icono {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
-}
-.texto-oculto {
-  width: 0;
-  opacity: 0;
-  transition-delay: 0.5s;
-  transition: all 0.5s ease;
-}
-.mostrar-texto {
-  width: 100%;
-  opacity: 1;
 }
