@@ -26,7 +26,7 @@ export const Boton = ({ nombreBoton, href }) => {
             strokeLinejoin="round"
           />
         </svg>
-        <div className="text">{nombreBoton}</div>
+        <div className="texto-oculto">{nombreBoton}</div>
       </a>
     </div>
   );

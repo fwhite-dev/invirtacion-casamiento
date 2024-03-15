@@ -58,7 +58,7 @@ function App() {
       }
     }
     let observerRegalos = new IntersectionObserver(visibilidadDivRegalo, {
-      threshold: 0.65
+      threshold: 0.7
     })
 
     observerRegalos.observe(divRegalo);
@@ -72,6 +72,17 @@ function App() {
       });
     })
     fotosOcultas.forEach((foto) => observer.observe(foto));
+
+
+    const textoOculto = document.querySelectorAll(".texto-oculto");
+    const observerTexto = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("mostrar-texto", entry.isIntersecting);
+      });
+    }, { threshold: 1 })
+    textoOculto.forEach((texto) => observerTexto.observe(texto));
+
+
   }, []
   );
 

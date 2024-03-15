@@ -1,7 +1,6 @@
 @import "../const/const.css";
 
 .contenedor-btn {
-  --rango-animacion: 100px;
   position: relative;
   background-color: var(--relleno-divs);
   width: 100%;
@@ -12,24 +11,38 @@
   outline: var(--borde-color) solid var(--grosor-outline);
 }
 .btn {
+  display: block;
   color: #000;
   width: 120px;
   height: 32px;
   margin: 0;
   padding: 8px;
-  display: block;
   position: absolute;
   top: calc(100% - 54px);
   left: 16px;
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 16px;
   border: none;
   cursor: pointer;
   overflow: hidden;
   background-color: var(--relleno-botones);
-
   border-radius: 32px;
-  /* box-shadow: var(--color-rosa) 0px 0px 0px 1px; */
+}
+.icono {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
+.texto-oculto {
+  width: 0;
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition: all 0.5s ease;
+}
+.mostrar-texto {
+  width: 100%;
+  opacity: 1;
 }
