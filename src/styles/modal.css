@@ -50,14 +50,17 @@
     padding: 20px;
     font-size: 2rem;
   }
+  .mensaje {
+    font-size: 1.3rem;
+  }
   .regalos-alias {
     /* padding: 20px; */
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .regalos-numero span {
     /* padding-top: 20px; */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
   }
 }
