@@ -34,7 +34,16 @@ img {
   outline: var(--borde-color) solid var(--grosor-outline);
 }
 
-/* === removing default button style ===*/
+.hidden {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.mostrar {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .titulo {
   font-size: var(--font-size-titulo);
   background-color: var(--background-color);
@@ -80,6 +89,10 @@ img {
     grid-column: 4 / 5;
     grid-row: 5 / 6;
   }
+  .dress-code {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  }
   .foto-1 {
     grid-column: 1 / 3;
     grid-row: 5 / 8;
@@ -88,10 +101,6 @@ img {
   .foto-2 {
     grid-column: 3 / 4;
     grid-row: 5 / 7;
-  }
-  .dress-code {
-    grid-column: 4 / 5;
-    grid-row: 6 / 7;
   }
 }
 .relog {
@@ -193,7 +202,7 @@ iframe {
     grid-template-columns: 160px 160px;
     grid-template-rows: repeat(8, 160px);
   }
-  .foto-0 {
+  .foto-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
   }
@@ -231,12 +240,76 @@ iframe {
     grid-column: 1 / 3;
     grid-row: 9 / 10;
   }
-  .foto-1 {
+  .foto-2 {
     grid-column: 1 / 3;
     grid-row: 10 / 11;
   }
-  .foto-2 {
+  .foto-3 {
     grid-column: 1 / 3;
     grid-row: 11 / 12;
+  }
+  .foto-4 {
+    grid-column: 1 / 3;
+    grid-row: 13 / 14;
+  }
+  .foto-5 {
+    grid-column: 1 / 3;
+    grid-row: 14 / 15;
+  }
+  .foto-6 {
+    grid-column: 1 / 3;
+    grid-row: 15 / 16;
+  }
+  .foto-7 {
+    grid-column: 1 / 3;
+    grid-row: 16 / 17;
+  }
+  .foto-8 {
+    grid-column: 1 / 3;
+    grid-row: 17 / 18;
+  }
+  .foto-9 {
+    grid-column: 1 / 3;
+    grid-row: 18 / 19;
+  }
+  .foto-10 {
+    grid-column: 1 / 3;
+    grid-row: 19 / 20;
+  }
+  .foto-11 {
+    grid-column: 1 / 3;
+    grid-row: 20 / 21;
+  }
+  .foto-12 {
+    grid-column: 1 / 3;
+    grid-row: 21 / 22;
+  }
+  .foto-13 {
+    grid-column: 1 / 3;
+    grid-row: 22 / 23;
+  }
+  .foto-14 {
+    grid-column: 1 / 3;
+    grid-row: 23 / 24;
+  }
+  .foto-15 {
+    grid-column: 1 / 3;
+    grid-row: 24 / 25;
+  }
+  .foto-16 {
+    grid-column: 1 / 3;
+    grid-row: 25 / 26;
+  }
+  .foto-17 {
+    grid-column: 1 / 3;
+    grid-row: 26 / 27;
+  }
+  .foto-18 {
+    grid-column: 1 / 3;
+    grid-row: 27 / 28;
+  }
+  .foto-19 {
+    grid-column: 1 / 3;
+    grid-row: 28 / 29;
   }
 }

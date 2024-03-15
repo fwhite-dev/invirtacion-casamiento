@@ -7,16 +7,26 @@ import { ModalRegalos } from "./componentes/ModalRegalos";
 
 
 
-import foto28 from "./assets/img/img28.avif";
 
-import foto31 from "./assets/img/img31.avif";
+
 import foto1 from "./assets/img/foto1.avif";
 import foto2 from "./assets/img/foto2.avif";
+import foto3 from "./assets/img/foto3.avif";
+import foto4 from "./assets/img/foto4.avif";
+import foto5 from "./assets/img/foto5.avif";
+import foto6 from "./assets/img/foto6.avif";
+import foto7 from "./assets/img/foto7.avif";
+import foto8 from "./assets/img/foto8.avif";
+import foto9 from "./assets/img/foto9.avif";
+import foto10 from "./assets/img/foto10.avif";
+import foto12 from "./assets/img/foto12.avif";
+import foto13 from "./assets/img/foto13.avif";
+import foto14 from "./assets/img/foto14.avif";
+import foto15 from "./assets/img/foto15.avif";
+import foto16 from "./assets/img/foto16.avif";
+import foto17 from "./assets/img/foto17.avif";
 import foto18 from "./assets/img/foto18.avif";
-
-
-
-
+import foto19 from "./assets/img/foto19.avif";
 
 
 function App() {
@@ -35,7 +45,7 @@ function App() {
       }
     }
     let observerMenu = new IntersectionObserver(verificarVisibilidadMenu, {
-      threshold: 0.8
+      threshold: 0.65
     })
 
     let divRegalo = document.querySelector(".regalos");
@@ -48,11 +58,19 @@ function App() {
       }
     }
     let observerRegalos = new IntersectionObserver(visibilidadDivRegalo, {
-      threshold: 0.8
+      threshold: 0.65
     })
 
     observerRegalos.observe(divRegalo);
     observerMenu.observe(divMenu);
+
+    const fotosOcultas = document.querySelectorAll(".hidden");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("mostrar", entry.isIntersecting);
+      });
+    })
+    fotosOcultas.forEach((foto) => observer.observe(foto));
   }, []
   );
 
@@ -149,18 +167,81 @@ function App() {
           <div className="circulo"></div>
         </div>
 
-        <picture className="foto-0">
+        <picture className="hidden foto-1">
           <source srcSet={foto1} />
           <img width="340px" height="520px" />
         </picture>
-        <picture className="foto-1">
+        <picture className="hidden foto-2">
+          <source srcSet={foto2} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-3">
+          <source srcSet={foto3} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-4">
+          <source srcSet={foto4} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-5">
+          <source srcSet={foto5} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-6">
+          <source srcSet={foto6} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-7">
+          <source srcSet={foto7} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-8">
+          <source srcSet={foto8} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-9">
+          <source srcSet={foto9} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-10">
+          <source srcSet={foto10} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+
+        <picture className="hidden foto-12">
+          <source srcSet={foto12} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-13">
+          <source srcSet={foto13} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-14">
+          <source srcSet={foto14} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-15">
+          <source srcSet={foto15} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-16">
+          <source srcSet={foto16} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-17">
+          <source srcSet={foto17} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
+        <picture className="hidden foto-18">
           <source srcSet={foto18} />
           <img width="340px" height="520px" loading="lazy" />
         </picture>
-        <picture className="foto-2" >
-          <source srcSet={foto31} />
-          <img width="160px" height="340px" loading="lazy" alt="Foto de los novios" />
+        <picture className="hidden foto-19">
+          <source srcSet={foto19} />
+          <img width="340px" height="520px" loading="lazy" />
         </picture>
+
+
 
       </div >
 
