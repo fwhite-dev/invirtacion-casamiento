@@ -86,21 +86,65 @@ img {
     grid-row: 4 / 5;
   }
   .form-alergias {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     grid-row: 5 / 6;
   }
   .dress-code {
     grid-column: 4 / 5;
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
   }
-  .foto-1 {
+  .foto-2 {
     grid-column: 1 / 3;
-    grid-row: 5 / 8;
+    grid-row: 5 / 7;
   }
 
-  .foto-2 {
-    grid-column: 3 / 4;
-    grid-row: 5 / 7;
+  .foto-5 {
+    grid-column: 3 / 5;
+    grid-row: 6 / 8;
+  }
+  .foto-3 {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+  .foto-4 {
+    grid-column: 3 / 5;
+    grid-row: 8 / 9;
+  }
+  .foto-13 {
+    grid-column: 1 / 3;
+    grid-row: 9 / 10;
+  }
+  .foto-14 {
+    grid-column: 3 / 5;
+    grid-row: 9 / 10;
+  }
+  .foto-8 {
+    grid-column: 1 / 3;
+    grid-row: 10 / 11;
+  }
+  .foto-9 {
+    grid-column: 3 / 5;
+    grid-row: 10 / 11;
+  }
+  .foto-10 {
+    grid-column: 1 / 3;
+    grid-row: 11 / 12;
+  }
+  .foto-11 {
+    grid-column: 3 / 5;
+    grid-row: 11 / 12;
+  }
+  .foto-7 {
+    grid-column: 1 / 3;
+    grid-row: 12 / 13;
+  }
+  .foto-6 {
+    grid-column: 3 / 5;
+    grid-row: 12 / 13;
+  }
+  .foto-12 {
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
   }
 }
 .relog {

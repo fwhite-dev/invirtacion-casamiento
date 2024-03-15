@@ -16,17 +16,13 @@ import foto4 from "./assets/img/foto4.avif";
 import foto5 from "./assets/img/foto5.avif";
 import foto6 from "./assets/img/foto6.avif";
 import foto7 from "./assets/img/foto7.avif";
-// import foto8 from "./assets/img/foto8.avif";
-// import foto9 from "./assets/img/foto9.avif";
+import foto8 from "./assets/img/foto8.avif";
+import foto9 from "./assets/img/foto9.avif";
 import foto10 from "./assets/img/foto10.avif";
+import foto11 from "./assets/img/foto11.avif";
 import foto12 from "./assets/img/foto12.avif";
 import foto13 from "./assets/img/foto13.avif";
 import foto14 from "./assets/img/foto14.avif";
-import foto15 from "./assets/img/foto15.avif";
-import foto16 from "./assets/img/foto16.avif";
-// import foto17 from "./assets/img/foto17.avif";
-// import foto18 from "./assets/img/foto18.avif";
-import foto19 from "./assets/img/foto19.avif";
 
 
 function App() {
@@ -197,19 +193,22 @@ function App() {
           <source srcSet={foto7} />
           <img width="340px" height="520px" loading="lazy" />
         </picture>
-        {/* <picture className="hidden foto-8">
+        <picture className="hidden foto-8">
           <source srcSet={foto8} />
           <img width="340px" height="520px" loading="lazy" />
-        </picture> */}
-        {/* <picture className="hidden foto-9">
+        </picture>
+        <picture className="hidden foto-9">
           <source srcSet={foto9} />
           <img width="340px" height="520px" loading="lazy" />
-        </picture> */}
+        </picture>
         <picture className="hidden foto-10">
           <source srcSet={foto10} />
           <img width="340px" height="520px" loading="lazy" />
         </picture>
-
+        <picture className="hidden foto-11">
+          <source srcSet={foto11} />
+          <img width="340px" height="520px" loading="lazy" />
+        </picture>
         <picture className="hidden foto-12">
           <source srcSet={foto12} />
           <img width="340px" height="520px" loading="lazy" />
@@ -222,29 +221,6 @@ function App() {
           <source srcSet={foto14} />
           <img width="340px" height="520px" loading="lazy" />
         </picture>
-        <picture className="hidden foto-15">
-          <source srcSet={foto15} />
-          <img width="340px" height="520px" loading="lazy" />
-        </picture>
-        <picture className="hidden foto-16">
-          <source srcSet={foto16} />
-          <img width="340px" height="520px" loading="lazy" />
-        </picture>
-        {/* <picture className="hidden foto-17">
-          <source srcSet={foto17} />
-          <img width="340px" height="520px" loading="lazy" />
-        </picture>
-        <picture className="hidden foto-18">
-          <source srcSet={foto18} />
-          <img width="340px" height="520px" loading="lazy" />
-        </picture> */}
-        <picture className="hidden foto-19">
-          <source srcSet={foto19} />
-          <img width="340px" height="520px" loading="lazy" />
-        </picture>
-
-
-
       </div >
 
     </div>
