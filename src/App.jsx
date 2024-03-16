@@ -158,7 +158,7 @@ function App() {
           <span className="dress-code-text">
             <h4>Dress Code</h4>
             <p>
-              Elegante Sport
+              Elegante 🎩
             </p>
           </span>
 
@@ -222,7 +222,11 @@ function App() {
           <img width="340px" height="520px" loading="lazy" />
         </picture>
       </div >
-
+      <footer>
+        <p className="copy">&copy; 2024 Federico Blanco. Todos los derechos reservados. Para consultas, contáctenos en <a href="mailto:fwhite@gmail.com"><strong>
+          Click Aqui
+        </strong></a>.</p>
+      </footer>
     </div>
   );
 

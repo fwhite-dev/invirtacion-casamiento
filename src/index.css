@@ -52,10 +52,18 @@ img {
   color: var(--color-titulo);
   text-align: center;
 }
-
+.contenedor {
+  background-color: var(--background-color);
+  text-align: center;
+}
+.copy {
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--color-azul-oscuro);
+}
 .contenerdor-grid {
   display: grid;
-  background-color: var(--background-color);
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, minmax(80px, 160px));
@@ -245,6 +253,9 @@ iframe {
   .contenerdor-grid {
     grid-template-columns: 160px 160px;
     grid-template-rows: repeat(8, 160px);
+  }
+  .copy {
+    font-size: 0.8rem;
   }
   .foto-1 {
     grid-column: 1 / 3;
