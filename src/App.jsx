@@ -223,9 +223,12 @@ function App() {
         </picture>
       </div >
       <footer>
-        <p className="copy">&copy; 2024 Federico Blanco. Todos los derechos reservados. Para consultas, contáctenos en <a href="mailto:fwhite@gmail.com"><strong>
-          Click Aqui
-        </strong></a>.</p>
+        <p className="copy">&copy; 2024 Federico Blanco. Todos los derechos reservados. Para consultas, contáctenos en <a href="mailto:fwhite@gmail.com">
+          <strong title="Queres tu invitacion personalizada">
+            Click Aqui
+          </strong>
+        </a>.
+        </p>
       </footer>
     </div>
   );
