@@ -224,7 +224,7 @@ function App() {
       </div >
       <footer>
         <p className="copy">&copy; 2024 Federico Blanco. Todos los derechos reservados. Para consultas, contáctenos en <a href="mailto:fwhite@gmail.com">
-          <strong title="Queres tu invitacion personalizada">
+          <strong title="¿Listo para destacar en la web? Desde invitaciones personalizadas, portafolios y asesoramiento en desarrollo de software. Contáctanos y hagamos realidad tus ideas juntos.">
             Click Aqui
           </strong>
         </a>.

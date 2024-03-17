@@ -255,7 +255,7 @@ iframe {
     grid-template-rows: repeat(8, 160px);
   }
   .copy {
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     font-size: 0.8rem;
   }
   .foto-1 {
